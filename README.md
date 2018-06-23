@@ -6,8 +6,8 @@ Employees of CAI have all of the same functionality as customers, in addition to
 
 Contributors: 
 
-Joe Wijoyo 
-Amy Valukonis
-Hudston Stuck 
-Yuri Machida
+Joe Wijoyo, 
+Amy Valukonis,
+Hudston Stuck, 
+Yuri Machida,
 Ivonne Guzman 
