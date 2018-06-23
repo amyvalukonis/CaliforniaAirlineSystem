@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeScheduleFlightPhase2Controller">
+   <children>
+      <Button fx:id="backButton" layoutX="537.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+      <Label layoutX="179.0" layoutY="140.0" text="Base Price:" />
+      <Label layoutX="175.0" layoutY="174.0" text="Flight Name:" />
+      <Label layoutX="176.0" layoutY="206.0" text="Flight Seats:" />
+      <TextField fx:id="basePriceTextField" layoutX="269.0" layoutY="135.0" onKeyReleased="#handleKeyReleased" prefHeight="27.0" prefWidth="130.0" />
+      <TextField fx:id="flightNameTextField" layoutX="269.0" layoutY="169.0" prefHeight="27.0" prefWidth="130.0" />
+      <TextField fx:id="flightSeatsTextField" layoutX="269.0" layoutY="201.0" prefHeight="27.0" prefWidth="130.0" />
+      <Label fx:id="flightTicketPriceLabel" layoutX="175.0" layoutY="255.0" text="Flight Ticket Price is:" />
+      <Button layoutX="247.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleScheduleFlight" text="Schedule Flight" />
+      <Label fx:id="flightScheduledLabel" layoutX="233.0" layoutY="358.0" text="Click to schedule flight" />
+   </children>
+</Pane>

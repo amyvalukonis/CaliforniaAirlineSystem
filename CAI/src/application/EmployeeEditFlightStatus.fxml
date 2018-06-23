@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditFlightStatusController">
+   <children>
+      <ListView fx:id="listView" layoutX="14.0" layoutY="18.0" onMouseClicked="#handleListViewMouseClick" prefHeight="378.0" prefWidth="293.0" />
+      <TextField fx:id="flightStatusTextField" layoutX="375.0" layoutY="127.0" />
+      <Text layoutX="423.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Status" />
+      <Button fx:id="backButton" layoutX="542.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+      <Button fx:id="editFlightStatusButton" layoutX="397.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleEditFlightStatus" text="Edit Flight Status" />
+   </children>
+</Pane>

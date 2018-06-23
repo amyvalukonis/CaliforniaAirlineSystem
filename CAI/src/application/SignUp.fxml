@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignUpController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="101.0" layoutY="45.0" text="Thank you for signing up!">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Button fx:id="backToMainMenu" layoutX="177.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleBack" text="Return to Login" />
+            <PasswordField fx:id="password" layoutX="273.0" layoutY="200.0" />
+            <TextField fx:id="username" layoutX="273.0" layoutY="146.0" />
+            <Button layoutX="381.0" layoutY="272.0" mnemonicParsing="false" onAction="#signUpUser" text="Sign Up" />
+            <Label layoutX="144.0" layoutY="151.0" text="Username:" />
+            <Label layoutX="145.0" layoutY="205.0" text="Password:" />
+            <CheckBox fx:id="isCustomerCheckBox" layoutX="115.0" layoutY="97.0" mnemonicParsing="false" onAction="#setUserAsCustomer" text="Customer" />
+            <CheckBox fx:id="isOfficeEmployeeCheckBox" layoutX="231.0" layoutY="97.0" mnemonicParsing="false" onAction="#setUserAsOfficeEmployee" text="Office Employee" />
+            <CheckBox fx:id="isFlightCrewCheckBox" layoutX="385.0" layoutY="97.0" mnemonicParsing="false" onAction="#setUserAsFlightCrew" text="Flight Crew" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

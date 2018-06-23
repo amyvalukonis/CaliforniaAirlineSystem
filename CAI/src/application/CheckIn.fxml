@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CheckInController">
+   <children>
+      <Button fx:id="submit" layoutX="300.0" layoutY="277.0" mnemonicParsing="false" onAction="#handleSubmit" text="Submit" />
+      <TextField fx:id="first_name" layoutX="356.0" layoutY="84.0" prefHeight="27.0" prefWidth="140.0" />
+      <TextField fx:id="last_name" layoutX="356.0" layoutY="136.0" prefHeight="27.0" prefWidth="140.0" />
+      <TextField fx:id="confirmationCode" layoutX="356.0" layoutY="192.0" prefHeight="27.0" prefWidth="140.0" />
+      <Label layoutX="110.0" layoutY="89.0" text=" First Name:" />
+      <Label layoutX="112.0" layoutY="141.0" text="Last Name:" />
+      <Label layoutX="110.0" layoutY="196.0" text="Confirmation Code:" />
+      <Button fx:id="toMain" layoutX="229.0" layoutY="277.0" mnemonicParsing="false" onAction="#handleToMain" text="Back" />
+      <Text layoutX="236.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flight Check-In ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="error" layoutX="112.0" layoutY="235.0" prefHeight="27.0" prefWidth="361.0" style="-fx-background-color: transparent;" text="The credentials you have entered are not in our system." visible="false">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextField>
+   </children>
+</Pane>

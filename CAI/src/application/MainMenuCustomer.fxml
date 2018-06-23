@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainMenuCustomerController">
+   <children>
+      <Pane layoutX="20.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="toCheckIn" layoutX="410.0" layoutY="173.0" mnemonicParsing="false" onAction="#handleToCheckIn" prefHeight="45.0" prefWidth="152.0" text="Check-In to Flight" />
+            <Button fx:id="toPurchaseTicket" layoutX="209.0" layoutY="173.0" mnemonicParsing="false" onAction="#handleToPurchaseATicket" prefHeight="45.0" prefWidth="158.0" text="Purchase a Ticket" />
+            <Button fx:id="toFlightStatus" layoutX="9.0" layoutY="173.0" mnemonicParsing="false" onAction="#handleToFlightStatus" prefHeight="45.0" prefWidth="158.0" text="Check Flight Status" />
+            <Button fx:id="logoutButton" layoutX="461.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="35.0" prefWidth="106.0" text="Logout" />
+            <Text layoutX="152.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="California Airlines">
+               <font>
+                  <Font name="Geneva" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

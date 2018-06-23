@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainMenuEmployeeController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="checkIn" layoutX="344.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleCheckIn" prefHeight="34.0" prefWidth="200.0" text="Check-In to Flight" />
+            <Button fx:id="searchFlight" layoutX="28.0" layoutY="119.0" mnemonicParsing="false" onAction="#handleSearchFlight" prefHeight="34.0" prefWidth="200.0" text="Search for Flight" />
+            <Button fx:id="checkFlightStatus" layoutX="344.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleToFlightStatus" prefHeight="34.0" prefWidth="200.0" text="Check Flight Status" />
+            <Button fx:id="logoutButton" layoutX="467.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="34.0" prefWidth="119.0" text="Logout" />
+            <Button fx:id="scheduleFlightButton" layoutX="28.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleScheduleFlight" prefHeight="34.0" prefWidth="200.0" text="Schedule Flight" />
+            <Button fx:id="editFlightStatus" layoutX="344.0" layoutY="119.0" mnemonicParsing="false" onAction="#handleEditFlightStatus" prefHeight="34.0" prefWidth="200.0" text="Edit Flight Status" />
+            <Button fx:id="editEmployeeButton" layoutX="28.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleEditEmployee" prefHeight="34.0" prefWidth="200.0" text="Edit Employee" />
+            <Text layoutX="27.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select an Option: ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="weeklyFlightsReportButton" layoutX="28.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleWeeklyFlightsReport" prefHeight="34.0" prefWidth="200.0" text="Weekly Flights Report" />
+            <Button fx:id="passengersForFlightsReportButton" layoutX="244.0" layoutY="346.0" mnemonicParsing="false" onAction="#handlePassengersForFlights" prefHeight="34.0" prefWidth="200.0" text="Passengers for Flights Report" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddBaggageController">
+   <children>
+      <Text layoutX="187.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the number of bag(s) to check-in:" wrappingWidth="251.21875" />
+      <ChoiceBox fx:id="comboBox" layoutX="184.0" layoutY="126.0" prefHeight="27.0" prefWidth="251.0" >
+     	<items>
+           <FXCollections fx:factory="observableArrayList">
+	          <String fx:value="0" />
+	          <String fx:value="1" />
+	          <String fx:value="2" />
+	          
+           </FXCollections>
+               </items>
+      </ChoiceBox>
+      <Button fx:id="baggagePolicy" layoutX="252.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleToBaggagePolicy" prefHeight="27.0" prefWidth="116.0" text="Baggage Policy" />
+      <Button fx:id="toCheckIn" layoutX="230.0" layoutY="197.0" mnemonicParsing="false" onAction="#handleToCheckIn" prefHeight="27.0" prefWidth="68.0" text="Back" />
+      <Button fx:id="submit" layoutX="321.0" layoutY="197.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="27.0" prefWidth="68.0" text="Submit " />
+      <Text layoutX="242.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Baggage(s)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

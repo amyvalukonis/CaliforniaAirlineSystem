@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <Pane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="username" layoutX="216.0" layoutY="149.0" />
+            <PasswordField fx:id="password" layoutX="217.0" layoutY="235.0" />
+            <Label layoutX="218.0" layoutY="126.0" text="Username" textAlignment="CENTER" />
+            <Label layoutX="219.0" layoutY="212.0" text="Password" textAlignment="CENTER" />
+            <Label layoutX="215.0" layoutY="81.0" text="Login">
+               <font>
+                  <Font size="26.0" />
+               </font></Label>
+            <Button fx:id="toCustomerMenu" layoutX="177.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleToCustomerMenu" text="Login Customer" />
+            <Button fx:id="toEmployeeMenu" layoutX="310.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleToEmployeeMenu" text="Login Employee" />
+            <Button fx:id="signUp" layoutX="260.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleSignUp" text="Sign up " />
+            <Label layoutX="39.0" layoutY="23.0" text="Welcome to California Airlines!">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="validLogin" layoutX="162.0" layoutY="275.0" text="Please enter a valid username and password." visible="false" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

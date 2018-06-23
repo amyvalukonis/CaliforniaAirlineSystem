@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TicketBoughtController">
+   <children>
+      <Text layoutX="73.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank you for choosing California Airlines!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Confirmation Number is: " />
+      <Button fx:id="toMainMenu" layoutX="207.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="27.0" prefWidth="205.0" text="Back to Main Menu" />
+      <TextField fx:id="displayCC" layoutX="73.0" layoutY="148.0" />
+   </children>
+</AnchorPane>

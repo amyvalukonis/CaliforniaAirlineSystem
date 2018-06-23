@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="339.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FlightStatusController">
+   <children>
+      <Pane layoutX="1.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <DatePicker fx:id="dp" layoutX="197.0" layoutY="130.0" />
+            <ChoiceBox fx:id="hourBox" layoutX="168.0" layoutY="212.0" prefHeight="27.0" prefWidth="76.0" />
+            <Button fx:id="toShowFlightStatus" layoutX="286.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleToShowFlightStatus" text="View Status" />
+            <Label layoutX="251.0" layoutY="100.0" text="Date of Flight:" />
+            <Label layoutX="257.0" layoutY="183.0" text="Flight Time: " />
+            <Label layoutX="218.0" layoutY="39.0" text="Check Flight Status">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Button fx:id="toMain" layoutX="215.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleToMain" text="Back" />
+            <ChoiceBox fx:id="minuteBox" layoutX="268.0" layoutY="212.0" prefHeight="27.0" prefWidth="76.0" />
+            <ChoiceBox fx:id="amPM" layoutX="358.0" layoutY="212.0" prefHeight="27.0" prefWidth="56.0" />
+            <TextField fx:id="error" layoutX="117.0" layoutY="241.0" prefHeight="27.0" prefWidth="370.0" style="-fx-background-color: transparent;" text="The credentials you have entered are not in our system." visible="false">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

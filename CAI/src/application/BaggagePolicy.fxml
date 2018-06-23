@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BaggagePolicyController">
+   <children>
+      <Pane layoutX="5.0" layoutY="5.0" prefHeight="400" prefWidth="600">
+         <children>
+            <Button fx:id="back" layoutX="275.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+            <TextArea layoutX="193.0" layoutY="76.0" prefHeight="200.0" prefWidth="215.0" text="Travelers are allowed to check in &#10;up to two baggages per customer. &#10;&#10;The maximum exterior dimension&#10;of standard checked baggage&#10;62 inches including handles&#10;and wheels. The maximum &#10;weight per bag is 50lb. &#10;&#10;Other service charges will apply&#10;to bags that exceed the above&#10;listed dimensions. &#10;&#10;&#10;&#10;&#10;&#10;" />
+            <Text layoutX="160.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="California Airline Baggage Policy ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

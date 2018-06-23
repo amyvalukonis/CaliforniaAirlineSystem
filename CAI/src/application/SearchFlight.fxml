@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SearchFlightController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="233.0" layoutY="17.0" text="Purchase a Ticket">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Text layoutX="21.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departure City:" wrappingWidth="95.78857421875" />
+            <Text layoutX="187.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date: " />
+            <DatePicker fx:id="date" layoutX="240.0" layoutY="115.0" prefHeight="27.0" prefWidth="171.0" />
+            <ChoiceBox fx:id="departure" layoutX="121.0" layoutY="65.0" prefHeight="27.0" prefWidth="133.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="San Luis Obispo" />
+                     <String fx:value="Los Angeles" />
+                     <String fx:value="San Francisco" />
+                     <String fx:value="San Diego" />
+                     <String fx:value="Arizona" />
+                     <String fx:value="Seattle" />
+                     <String fx:value="Dallas" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            
+            <Button fx:id="search" layoutX="26.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleSearch" prefHeight="27.0" prefWidth="86.0" text="Search" />
+            <Button fx:id="toMain" layoutX="537.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleToMain" text="Back" />
+            <Label layoutX="27.0" layoutY="199.0" text="Available Flights:" />
+            <ChoiceBox fx:id="choiceFlights" layoutX="26.0" layoutY="224.0" prefHeight="27.0" prefWidth="390.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <Button fx:id="toPurchaseTicket" layoutX="468.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleToPurchaseTicket" text="Purchase Ticket" />
+            <ChoiceBox fx:id="destination" layoutX="403.0" layoutY="65.0" prefHeight="27.0" prefWidth="133.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="San Luis Obispo" />
+                     <String fx:value="Los Angeles" />
+                     <String fx:value="San Francisco" />
+                     <String fx:value="San Diego" />
+                     <String fx:value="Arizona" />
+                     <String fx:value="Seattle" />
+                     <String fx:value="Dallas" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <Text layoutX="297.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destination City:" wrappingWidth="103.923828125" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PurchaseTicketController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="224.0" layoutY="14.0" text="Purchase a Ticket">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="toSearchFlight" layoutX="537.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleToSearchFlight" text="Back" />
+            <CheckBox fx:id="individual" layoutX="259.0" layoutY="262.0" mnemonicParsing="false" text="Individual" />
+            <CheckBox fx:id="group" layoutX="259.0" layoutY="296.0" mnemonicParsing="false" text="Group" />
+            <TextArea fx:id="customerInfo" layoutX="35.0" layoutY="167.0" prefHeight="84.0" prefWidth="471.0" />
+            <Label fx:id="flightDetails" layoutX="35.0" layoutY="80.0" text="Flight Details: " />
+            <Button fx:id="purchaseTicket" layoutX="233.0" layoutY="334.0" mnemonicParsing="false" onAction="#handlePurchaseTicket" text="Purchase Ticket(s)" />
+            <Label layoutX="35.0" layoutY="143.0" text="Format: Firstname,Lastname,D.O.B. (MM/DD/YYYY),Phone Number (XXX-XXX-XXXX)" />
+            <Label layoutX="246.0" layoutY="72.0" text="FLIGHT DETAILS:" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

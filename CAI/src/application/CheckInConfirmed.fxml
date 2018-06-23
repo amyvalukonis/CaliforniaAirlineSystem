@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CheckInConfirmedController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0">
+         <children>
+            <Pane prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="toMain" layoutX="227.0" layoutY="205.0" mnemonicParsing="false" onAction="#handleToMain" text="Return To Main Menu" />
+                  <Label layoutX="126.0" layoutY="102.0" text="You're all checked in!">
+                     <font>
+                        <Font size="36.0" />
+                     </font></Label>
+                  <Text layoutX="227.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have a safe flight ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
